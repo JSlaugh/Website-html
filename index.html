@@ -10,6 +10,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="this is a website for my is120 class">
   <title>Document</title>
+  <style>
+    picture {
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    .hero {
+      width: 100%;
+    }
+  </style>
 </head>
 
 <body>
@@ -27,6 +37,12 @@
       <figcaption><strong> leaping for joy</strong></figcaption>
     </figure>
     <h1>Whale City</h1>
+    <picture>
+      <source srcset="./Whale1600.jpg" media="(min-width: 901px)">
+      <source srcset="./Whale900.jpg" media="(min-width: 501px)">
+      <source srcset="./Whale500.jpg" media="(max-width: 500px)">
+      <img src="images/Whale1600.jpg" class="hero" alt="photo of breanna">
+    </picture>
     <article>
 
       <h2>Tips and tricks for seeing whales</h2>
